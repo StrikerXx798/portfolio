@@ -1,0 +1,24 @@
+.skills {
+    height: 100vh;
+    background-color: #c8ffd1;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid;
+}
+
+
+.heading {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillSet {
+    display: flex;
+    justify-content: space-between;
+}
