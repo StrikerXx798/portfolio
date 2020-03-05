@@ -1,4 +1,54 @@
 .contacts {
     height: 100vh;
-    background-color: #ffcb82;
+    background-color: #ffe1d2;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    height: 60%;
+    border: 1px solid;
+    align-self: center;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 300px;
+    height: 250px;
+    justify-content: space-around;
+}
+
+input{
+    height: 30px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 150px;
+    height: 25px;
 }

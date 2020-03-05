@@ -3,6 +3,7 @@
     background-color: #c8ffd1;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -25,5 +26,4 @@
     height: 70%;
     display: flex;
     justify-content: space-between;
-
 }

@@ -1,4 +1,42 @@
 .footer {
-    height: 300px;
-    background-color: #ffffd8;
+    height: 250px;
+    background-color: #dbb295;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.messengers {
+    height: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border: 1px solid;
+}
+
+.messenger {
+    background-image: url("https://webstockreview.net/images/thumb-clipart-gutka-3.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
 }
