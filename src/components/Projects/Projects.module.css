@@ -1,4 +1,27 @@
 .projects {
     height: 100vh;
-    background-color: #d083ff;
+    background-color: #f0e1ff;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 70%;
+    border: 1px solid;
+    align-self: center;
+}
+
+.heading {
+    height: 30%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.projectsSet {
+    border: 1px solid;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
 }
