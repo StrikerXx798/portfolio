@@ -1,4 +1,25 @@
 .slogan {
-    height: 250px;
+    height: 200px;
     background-color: #ffffd8;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 40%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+}
+
+.sloganText {
+    font-size: x-large;
+    align-self: center;
+}
+
+.button {
+    align-self: center;
 }
