@@ -1,0 +1,22 @@
+.project {
+    background-color: #fff;
+    width: 40%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.projectImg {
+    height: 200px;
+    background-image: url("https://itea.uz/wp-content/uploads/2018/01/react-base.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
