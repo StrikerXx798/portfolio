@@ -1,9 +1,8 @@
 .skills {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #c8ffd1;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .container {
@@ -23,7 +22,7 @@
 
 .skillSet {
     border: 1px solid;
-    height: 70%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }

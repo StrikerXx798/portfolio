@@ -6,8 +6,8 @@
 }
 
 .container {
+    min-width: 300px;
     width: 80%;
-    height: 40%;
     border: 1px solid;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
 }
 
 .sloganText {
-    font-size: x-large;
+    font-size: large;
     align-self: center;
 }
 

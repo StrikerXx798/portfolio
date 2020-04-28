@@ -6,12 +6,12 @@
 }
 
 .container {
+    min-width: 300px;
     width: 80%;
-    height: 70%;
     display: flex;
     justify-content: space-between;
     border: 1px solid;
-    align-self: flex-end;
+    align-self: center;
     flex-direction: column;
 }
 
@@ -22,7 +22,7 @@
 
 .messengers {
     height: 40px;
-    width: 60%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-self: center;

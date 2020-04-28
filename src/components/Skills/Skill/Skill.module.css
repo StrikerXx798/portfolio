@@ -1,9 +1,8 @@
 .skill {
     background-color: #fff;
-    width: 25%;
+    width: 300px;
     border: 1px solid;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
