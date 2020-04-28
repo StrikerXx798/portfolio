@@ -1,18 +1,23 @@
 import React from 'react';
 import styles from './Project.module.css';
+import Button from "../../Button";
 
+class Project extends React.Component {
+    state ={
+        title: "To-Do-List",
+        buttonType:"button",
+        buttonTitle: "Смотреть"
+    }
 
-const Project = (props) => {
+    render = () => {
     return (
         <div className = {styles.project}>
             <div className = {styles.projectImg}>
-                <div className = {styles.button}>
-                    <button>Watch</button>
-                </div>
+                <Button state={this.state} />
             </div>
             <div className = {styles.descriptionProject}>
                 <span>
-                    Project Name
+                    {this.state.title}
                 </span>
                 <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, fugit illo laborum repellat sit ut.
@@ -20,7 +25,8 @@ const Project = (props) => {
             </div>
         </div>
     );
-}
+}}
+
 
 
 export default Project;

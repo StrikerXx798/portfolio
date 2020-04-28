@@ -1,25 +1,27 @@
 import React from 'react';
 import styles from './Slogan.module.css';
+import Button from "../Button";
 
+class Slogan extends React.Component {
+    state = {
+        buttonType: "button",
+        buttonTitle: "Нанять меня"
+    }
 
-const Slogan = (props) => {
-    return (
-        <div className = {styles.slogan}>
-            <div className = {styles.container}>
-                <div className = {styles.sloganText}>
-                <span>
-                    I consider options for remote work
-                </span>
-                </div>
-                <div className = {styles.button}>
-                    <button>
-                        Recruit Me
-                    </button>
+    render = () => {
+        return (
+            <div className={styles.slogan}>
+                <div className={styles.container}>
+                    <div className={styles.sloganText}>
+                        <span>
+                            Рассматриваю варианты для удаленной работы!
+                        </span>
+                    </div>
+                    <Button state={this.state} />
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
-
 
 export default Slogan;

@@ -1,28 +1,47 @@
 .skills {
     min-height: 100vh;
-    background-color: #c8ffd1;
+    background-color: #252527;
     display: flex;
     justify-content: center;
 }
 
 .container {
     width: 80%;
-    height: 70%;
-    border: 1px solid;
+    padding: 50px 0;
     align-self: center;
 }
 
+.line {
+    height: 1px;
+    width: 55px;
+    background-color: #ecb624;
+    margin: 30px 0;
+}
 
 .heading {
     height: 30%;
-    border: 1px solid;
     display: flex;
-    justify-content: center;
+    align-items: center;;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 36px;
+    text-transform: capitalize;
 }
 
 .skillSet {
-    border: 1px solid;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1135px) {
+    .skillSet {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }

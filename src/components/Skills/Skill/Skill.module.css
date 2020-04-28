@@ -1,7 +1,5 @@
 .skill {
-    background-color: #fff;
     width: 300px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 }
@@ -18,6 +16,14 @@
     justify-content: center;
 }
 
-.descriptionSkill {
-    border: 1px solid;
+@media screen and (max-width: 1135px) {
+    .skill {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .skill {
+        width: 100%;
+    }
 }

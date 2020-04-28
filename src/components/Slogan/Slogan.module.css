@@ -1,6 +1,6 @@
 .slogan {
     height: 200px;
-    background-color: #ffffd8;
+    background-color: #252527;
     display: flex;
     justify-content: center;
 }
@@ -8,18 +8,14 @@
 .container {
     min-width: 300px;
     width: 80%;
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-self: center;
+    align-items: center;
 }
 
 .sloganText {
     font-size: large;
-    align-self: center;
-}
-
-.button {
     align-self: center;
 }

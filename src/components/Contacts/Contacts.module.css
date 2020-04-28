@@ -1,17 +1,16 @@
 .contacts {
     min-height: 100vh;
-    background-color: #ffe1d2;
+    background-color: #1f1f20;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .container {
     display: flex;
     width: 80%;
-    height: 70%;
-    border: 1px solid;
+    flex-direction: column;
+    align-items: center;
     align-self: center;
-    justify-content: center;
 }
 
 .heading {
@@ -20,19 +19,13 @@
     font-size: x-large;
 }
 
-.contactForm {
+.formWrapper {
     display: flex;
     flex-direction: column;
+    width: 500px;
+    height: 400px;
     justify-content: space-around;
-}
-
-.inputForm {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    width: 280px;
-    height: 250px;
-    justify-content: space-around;
+    align-content: center;
 }
 
 input{
@@ -44,11 +37,12 @@ textarea {
 }
 
 .submitButton {
-    display: flex;
-    justify-content: center;
+    align-self: center;
 }
 
-button {
-    width: 150px;
-    height: 25px;
+@media screen and (max-width: 623px) {
+    .formWrapper {
+        width: 100%;
+    }
 }
+

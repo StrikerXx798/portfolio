@@ -1,30 +1,31 @@
 import React from 'react';
 import styles from './Contacts.module.css';
+import Button from "../Button";
 
+class Contacts extends React.Component {
+    state ={
+        title: "Контакты",
+        buttonType:"submit",
+        buttonTitle: "Отправить"
+    }
 
-const Contacts = (props) => {
-    return (
-        <div className={styles.contacts}>
-            <div className={styles.container}>
-                <div className={styles.contactForm}>
-                    <div className={styles.heading}>
-                        <span>
-                            My contacts
-                        </span>
-                    </div>
-                    <form className={styles.inputForm}>
-                        <input placeholder="Your Name" type="text"/>
-                        <input placeholder="Your E-Mail" type="text"/>
-                        <textarea placeholder="Write your comment..."></textarea>
+    render = () => {
+        return (
+            <div className={styles.contacts}>
+                <div className={styles.container}>
+                    <span className={styles.heading}>{this.state.title}</span>
+                    <form className={styles.formWrapper}>
+                        <input placeholder="Your Name" type=""/>
+                        <input placeholder="Your E-Mail" type="email"/>
+                        <textarea placeholder="Write your comment..."/>
+                        <Button state={this.state} />
                     </form>
-                    <div className={styles.submitButton}>
-                        <button type="submit">Submit</button>
-                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
+
 
 
 export default Contacts;

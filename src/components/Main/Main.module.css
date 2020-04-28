@@ -1,13 +1,13 @@
 .main {
     height: 100vh;
-    background-color: #f7deff;
+    background-color: #1f1f20;
     display: flex;
     justify-content: center;
+    padding: 100px 0;
 }
 
 .container {
     width: 80%;
-    border: 1px solid;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,8 +18,73 @@
     display: flex;
     flex-direction: column;
 }
+
+.greeting span:nth-child(1){
+    font-size: 20px;
+}
+
+.greeting span:nth-child(2),
+.greeting span:nth-child(2) span{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.greeting span:nth-child(2) span:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #ecb624;
+    bottom: 1px;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
 .photo {
+    margin-top: 50px;
+    position: relative;
+}
+
+.image {
     height: 400px;
     width: 300px;
     background-color: #dbdbdb;
+    z-index: 1;
+}
+
+.photo .image:before{
+    content: "";
+    position: absolute;
+    height: 430px;
+    width: 300px;
+    border: 5px #ecb624 solid;
+    left: 19px;
+    top: -19px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 801px) {
+    .greeting span:nth-child(2) span:before{
+        top: 100px ;
+        right: 30px;
+        width: 297px;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .greeting span:nth-child(2) span:before{
+        top: 100px ;
+        right: -32px;
+        width: 297px;
+    }
 }

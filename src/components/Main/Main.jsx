@@ -1,23 +1,23 @@
 import React from 'react';
 import styles from './Main.module.css';
 
-
-const Main = (props) => {
-    return (
-        <div className = {styles.main}>
-            <div className={styles.container}>
-                <div className={styles.greeting}>
-                    <span>Hello</span>
-                    <span>My name is Evgeny Turetskov</span>
-                    <span>I'm front-end developer</span>
-                </div>
-                <div className={styles.photo}>
-                    <img src="" alt=""/>
+class Main extends React.Component {
+    render = () => {
+        return (
+            <div className = {styles.main}>
+                <div className={styles.container}>
+                    <div className={styles.greeting}>
+                        <span>Привет!</span>
+                        <span>Я <span>Евгений Турецков</span></span>
+                        <h1>Я front-end разработчик</h1>
+                    </div>
+                    <div className={styles.photo}>
+                        <div className={styles.image}/>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
-
 
 export default Main;

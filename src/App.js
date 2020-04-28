@@ -8,21 +8,24 @@ import Slogan from './components/Slogan/Slogan';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 
-const App = (props) => {
-  return (
-    <div className = "App">
-      <div className = "Portfolio">
-        <Header />
-        <Main />
-        <Skills />
-        <Projects />
-        <Slogan />
-        <Contacts />
-        <Footer />
-      </div>
-    </div>
-  );
-};
+class App extends React.Component {
+  render = () => {
+    return (
+        <div className = "App">
+          <div className = "Portfolio">
+            <Header />
+            <Main />
+            <Skills />
+            <Projects />
+            <Slogan />
+            <Contacts />
+            <Footer />
+          </div>
+        </div>
+    );
+  };
+}
+
 
 
 export default App;
