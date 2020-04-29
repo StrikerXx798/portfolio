@@ -5,11 +5,11 @@
 }
 
 .projectImg {
-    height: 150px;
-    background-color: white;
+    height: 300px;
     background-size: contain;
     display: flex;
     justify-content: center;
+    background-image: url(https://lh6.ggpht.com/aiY9J8YK8Lzr7hMC7nZWlZGiBn8TF_PY7NVNy5U1i5g4zG8yEPzEZTJK2WwbWJUogg);
 }
 
 .button{

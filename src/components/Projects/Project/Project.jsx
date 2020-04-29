@@ -12,7 +12,7 @@ class Project extends React.Component {
     render = () => {
     return (
         <div className = {styles.project}>
-            <div className = {styles.projectImg}>
+            <div className = {styles.projectImg} >
                 <Button state={this.state} />
             </div>
             <div className = {styles.descriptionProject}>

@@ -32,7 +32,7 @@
     line-height: 1.2;
     letter-spacing: 5px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 .greeting span:nth-child(2) span:before{
@@ -53,13 +53,13 @@ h1 {
 .photo {
     margin-top: 50px;
     position: relative;
+    z-index: 1;
 }
 
 .image {
     height: 400px;
     width: 300px;
     background-color: #dbdbdb;
-    z-index: 1;
 }
 
 .photo .image:before{
@@ -68,9 +68,9 @@ h1 {
     height: 430px;
     width: 300px;
     border: 5px #ecb624 solid;
-    left: 19px;
-    top: -19px;
-    z-index: 0;
+    left: 15px;
+    top: -15px;
+    z-index: -1;
 }
 
 @media screen and (max-width: 801px) {

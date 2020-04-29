@@ -5,10 +5,10 @@
 }
 
 .icon {
-    height: 65px;
-    width: 65px;
-    background-color: #dbdbdb;
+    width: 40%;
+    height: 40%;
     align-self: center;
+    image-resolution: normal;
 }
 
 .nameSkill {
