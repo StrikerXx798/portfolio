@@ -1,12 +1,17 @@
 import React from 'react';
 import styles from './Project.module.css';
 import Button from "../../Button";
+import htmlIcon from "../../../assets/untitled(7).svg";
+import cssIcon from "../../../assets/untitled(8).svg";
+import jsIcon from "../../../assets/untitled(9).svg";
+import reactIcon from "../../../assets/untitled(5).svg";
+import reduxIcon from "../../../assets/untitled(10).svg";
+import tsIcon from "../../../assets/untitled(3).svg";
 
 class Project extends React.Component {
     state ={
-        title: "To-Do-List",
         buttonType:"button",
-        buttonTitle: "Смотреть"
+        buttonTitle: "Смотреть",
     }
 
     render = () => {
@@ -15,18 +20,13 @@ class Project extends React.Component {
             <div className = {styles.projectImg} >
                 <Button state={this.state} />
             </div>
-            <div className = {styles.descriptionProject}>
-                <span>
-                    {this.state.title}
-                </span>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, fugit illo laborum repellat sit ut.
-                </div>
+            <span className={styles.projectTitle}>{this.props.title}</span>
+            <div className={styles.description}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, omnis.
             </div>
         </div>
     );
 }}
-
 
 
 export default Project;

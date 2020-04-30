@@ -1,17 +1,17 @@
 .footer {
-    height: 250px;
+    min-height: 300px;
     background-color: #252527;
     display: flex;
     justify-content: center;
 }
 
 .container {
-    min-width: 300px;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-self: center;
     flex-direction: column;
+    padding: 80px 0 40px;
 }
 
 .heading {
@@ -20,34 +20,26 @@
 }
 
 .messengers {
-    height: 100%;
+    height: 50px;
     width: 500px;
     display: flex;
     justify-content: space-between;
     align-self: center;
-}
-
-.messenger {
-    background-image: url("https://webstockreview.net/images/thumb-clipart-gutka-3.png");
-    background-size: cover;
-    width: 60px;
-    height: 60px;
+    margin-top: -30px;
+    flex-wrap: wrap;
 }
 
 .rights {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 623px) {
     .messengers {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .messenger {
-        width: 50px;
-        height: 50px;
     }
 }

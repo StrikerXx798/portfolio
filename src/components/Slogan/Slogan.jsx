@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './Slogan.module.css';
 import Button from "../Button";
+import BlockTitle from "../BlockTitle";
 
 class Slogan extends React.Component {
     state = {
+        title: "Рассматриваю варианты для удаленной работы",
         buttonType: "button",
         buttonTitle: "Нанять меня"
     }
@@ -12,11 +14,7 @@ class Slogan extends React.Component {
         return (
             <div className={styles.slogan}>
                 <div className={styles.container}>
-                    <div className={styles.sloganText}>
-                        <span>
-                            Рассматриваю варианты для удаленной работы!
-                        </span>
-                    </div>
+                    <BlockTitle title={this.state.title}/>
                     <Button state={this.state} />
                 </div>
             </div>

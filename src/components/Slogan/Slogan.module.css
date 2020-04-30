@@ -1,8 +1,9 @@
 .slogan {
-    height: 200px;
+    height: 100%;
     background-color: #252527;
     display: flex;
     justify-content: center;
+    padding: 30px 0;
 }
 
 .container {
@@ -13,9 +14,4 @@
     flex-direction: column;
     align-self: center;
     align-items: center;
-}
-
-.sloganText {
-    font-size: large;
-    align-self: center;
 }

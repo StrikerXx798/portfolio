@@ -11,26 +11,6 @@
     align-self: center;
 }
 
-.line {
-    height: 1px;
-    width: 55px;
-    background-color: #ecb624;
-    margin: 30px 0;
-}
-
-.heading {
-    height: 30%;
-    display: flex;
-    align-items: center;;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.2;
-    letter-spacing: 5px;
-    font-weight: 300;
-    font-size: 36px;
-    text-transform: capitalize;
-}
-
 .skillSet {
     width: 100%;
     display: flex;

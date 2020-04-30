@@ -1,23 +1,47 @@
 .project {
-    width: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin-bottom: 60px;
+    height: max-content;
 }
 
 .projectImg {
     height: 300px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    background-image: url(https://lh6.ggpht.com/aiY9J8YK8Lzr7hMC7nZWlZGiBn8TF_PY7NVNy5U1i5g4zG8yEPzEZTJK2WwbWJUogg);
+    background-image: url(https://i.pinimg.com/originals/44/e7/8d/44e78d1f020b30e73ba169510dd6460e.jpg);
+    position: relative;
 }
 
-.button{
+.projectImg :before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.projectTitle {
     display: flex;
-    justify-content: center;
-    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px 15px 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 3px;
 }
 
+.description {
+    margin: 0 15px 20px;
+}
 
 @media screen and (max-width: 1135px) {
     .project {
