@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Messenger.module.css';
 
-
 class Messenger extends React.Component {
     render = () => {
         return (
@@ -13,7 +12,5 @@ class Messenger extends React.Component {
         );
     }
 }
-
-
 
 export default Messenger;
