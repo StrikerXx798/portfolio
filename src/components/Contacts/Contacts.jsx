@@ -19,7 +19,7 @@ class Contacts extends React.Component {
                         <input className={styles.formArea} placeholder="Имя" type=""/>
                         <input className={styles.formArea} placeholder="E-Mail" type="email"/>
                         <textarea className={styles.messageArea} placeholder="Сообщение"/>
-                        <Button state={this.state} />
+                        <Button style={{position: 'static', transform: 'translate(0)'}} state={this.state} />
                     </form>
                 </div>
             </div>

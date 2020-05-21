@@ -7,24 +7,19 @@
     height: max-content;
 }
 
-.projectImg {
+.imgBlock {
     height: 300px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    background-image: url(https://i.pinimg.com/originals/44/e7/8d/44e78d1f020b30e73ba169510dd6460e.jpg);
     position: relative;
 }
 
-.projectImg :before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-    right: 0;
-    background-color: black;
+.projectImg {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/44/e7/8d/44e78d1f020b30e73ba169510dd6460e.jpg);
+    transition: 0.3s;
+}
+
+.projectImg:hover {
     opacity: 0.5;
 }
 

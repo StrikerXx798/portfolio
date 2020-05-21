@@ -10,6 +10,7 @@
 
 .messenger img{
     width: 80%;
+    transition: 0.2s;
 }
 
 .messenger a{
@@ -17,4 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.messenger img:hover {
+    width: 92%;
 }

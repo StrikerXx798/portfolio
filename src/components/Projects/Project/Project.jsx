@@ -17,8 +17,11 @@ class Project extends React.Component {
     render = () => {
     return (
         <div className = {styles.project}>
-            <div className = {styles.projectImg} >
-                <Button state={this.state} />
+            <div className={styles.imgBlock}>
+                <div className={styles.projectImg}>
+
+                </div>
+                <Button state={this.state}/>
             </div>
             <span className={styles.projectTitle}>{this.props.title}</span>
             <div className={styles.description}>

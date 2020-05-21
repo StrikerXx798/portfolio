@@ -46,9 +46,9 @@
     padding: .4rem 15px;
 }
 
-.submitButton {
-    align-self: center;
-}
+/*.formWrapper button.button:last-child {*/
+/*    position: static;*/
+/*}*/
 
 @media screen and (max-width: 623px) {
     .formWrapper {

@@ -15,7 +15,7 @@ class Slogan extends React.Component {
             <div className={styles.slogan}>
                 <div className={styles.container}>
                     <BlockTitle title={this.state.title}/>
-                    <Button state={this.state} />
+                    <Button style={{position: 'static', transform: 'translate(0)'}} state={this.state} />
                 </div>
             </div>
         );

@@ -4,9 +4,14 @@
     align-self: center;
     align-items: center;
     background: white;
-    border: 0;
+    border: 3px solid #ecb624;
     font-family: 'Noto Sans', sans-serif;
-    margin: 15px 0 0;
     padding: 0;
     outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%);
 }

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .container {
@@ -13,5 +13,4 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }

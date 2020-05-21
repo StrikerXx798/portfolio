@@ -2,5 +2,9 @@
     display: flex;
     width: 400px;
     justify-content: space-between;
+}
 
+.navMenu a {
+    color: #ecb624;
+    text-decoration-line: none;
 }
