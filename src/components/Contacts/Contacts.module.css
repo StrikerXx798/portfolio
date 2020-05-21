@@ -20,7 +20,7 @@
     width: 540px;
     height: 400px;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     margin-top: -30px;
 }
 
@@ -39,16 +39,15 @@
 .messageArea {
     min-height: 160px;
     padding: 15px;
+    width: 100%;
 }
 
 .formArea{
     height: calc(1.5em + 0.75em + 2px) ;
     padding: .4rem 15px;
+    width: 100%;
 }
 
-/*.formWrapper button.button:last-child {*/
-/*    position: static;*/
-/*}*/
 
 @media screen and (max-width: 623px) {
     .formWrapper {

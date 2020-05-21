@@ -10,9 +10,11 @@
 .imgBlock {
     height: 300px;
     position: relative;
+
 }
 
 .projectImg {
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-image: url(https://i.pinimg.com/originals/44/e7/8d/44e78d1f020b30e73ba169510dd6460e.jpg);
