@@ -4,24 +4,16 @@
 .contacts {
     min-height: 100vh;
     background-color: $bgSecondColor;
-    display: flex;
-    justify-content: space-around;
+    @include flex(column, space-around, center, null);
     position : relative;
     .container {
-        display: flex;
-        width: 80%;
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
-        flex-wrap: wrap;
+        @include container();
+        @include flex(column, center, center, null);
     }
     .formWrapper {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, space-around, center, null);
         width: 540px;
         height: 400px;
-        justify-content: space-around;
-        align-items: center;
         margin-top: -30px;
         .formArea{
             height: calc(1.5em + 0.75em + 2px) ;

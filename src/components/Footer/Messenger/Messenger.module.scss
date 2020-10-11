@@ -1,24 +1,25 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
 .messenger {
     width: 60px;
     height: 60px;
-    border: 1px solid #ecb624;
+    border: 1px solid $primaryColor;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, wrap);
     & img{
-        width: 80%;
-        transition: 0.2s;
+        @include container();
+        transition: 0.4s;
         &:hover {
-            width: 95%;
+            width: 90%;
+            opacity: 0.8;
         }
     }
     & a{
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center, wrap);
         cursor: pointer;
+
     }
 }
 

@@ -1,10 +1,12 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .navMenu {
-    display: flex;
     width: 400px;
-    justify-content: space-between;
+    @include flex(row, space-between, center, wrap);
+
     .link {
+        @include text($textFontFamily, 14px, 400, 1.2);
         color: $primaryColor;
         text-decoration-line: none;
         transition: 0.4s;

@@ -3,14 +3,17 @@ import styles from './Projects.module.scss';
 import Project from './Project/Project';
 import Title from "../../common/components/Title/Title";
 import Fade from 'react-reveal/Fade'
+import counterIMG from '../../assets/counter.png'
+import socialIMG from '../../assets/socialnetimg.jpg'
+import todoIMG from '../../assets/todoimg.jpg'
 
 class Projects extends React.Component {
     state ={
         title: "Мои проекты",
         project: [
-            {title: 'To Do List', projectImg:{}, description:'', ghPages:''},
-            {title: 'Counter', projectImg:{}, description:'', ghPages:'https://StrikerXx798.github.io/counter/'},
-            {title: 'Social Network', projectImg:{}, description:'', ghPages:''},
+            {title: 'To Do List', projectImg: counterIMG, description:'', ghPages:''},
+            {title: 'Counter', projectImg:todoIMG, description:'', ghPages:'https://StrikerXx798.github.io/counter/'},
+            {title: 'Social Network', projectImg:socialIMG, description:'', ghPages:''},
         ]
     }
 
