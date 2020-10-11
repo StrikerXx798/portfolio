@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Project.module.css';
-import Button from "../../Button";
+import styles from './Project.module.scss';
+import Button from "../../../common/components/Button/Button";
 
 class Project extends React.Component {
     state ={

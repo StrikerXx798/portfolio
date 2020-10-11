@@ -1,0 +1,27 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.skills {
+    min-height: 100vh;
+    background-color: $bgSecondColor;
+    position : relative;
+
+    .container {
+        @include container();
+        padding: 20px 0;
+
+        .skillSet {
+            width: 100%;
+            @include flex(row, space-between, center, wrap);
+
+            @media screen and (max-width: 1135px) {
+                @include flex(column, center, center, wrap);
+            }
+        }
+    }
+}
+
+
+
+
+

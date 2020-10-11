@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './Projects.module.css';
+import styles from './Projects.module.scss';
 import Project from './Project/Project';
-import BlockTitle from "../BlockTitle";
-import Skill from "../Skills/Skill/Skill";
+import Title from "../../common/components/Title/Title";
 import Fade from 'react-reveal/Fade'
 
 class Projects extends React.Component {
@@ -23,7 +22,7 @@ class Projects extends React.Component {
             <div className = {styles.projects}>
                 <Fade bottom>
                     <div className = {styles.container}>
-                        <BlockTitle title={this.state.title}/>
+                        <Title title={this.state.title}/>
                         <div className = {styles.projectsSet}>
                             {project}
                         </div>

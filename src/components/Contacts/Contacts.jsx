@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Contacts.module.css';
-import Button from "../Button";
-import BlockTitle from "../BlockTitle";
+import styles from './Contacts.module.scss';
+import Button from "../../common/components/Button/Button";
+import Title from "../../common/components/Title/Title";
 import Fade from 'react-reveal/Fade'
 
 class Contacts extends React.Component {
@@ -16,7 +16,7 @@ class Contacts extends React.Component {
             <div className={styles.contacts}>
                 <Fade bottom>
                     <div className={styles.container}>
-                        <BlockTitle title={this.state.title}/>
+                        <Title title={this.state.title}/>
                         <form className={styles.formWrapper}>
                             <input className={styles.formArea} placeholder="Имя" type=""/>
                             <input className={styles.formArea} placeholder="E-Mail" type="email"/>

@@ -1,0 +1,38 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.footer {
+    min-height: 300px;
+    background-color: $bgColor;
+    @include flex(column, center, null, null);
+    position : relative;
+
+    .container {
+        @include container();
+        @include flex(column, space-between, center, wrap);
+        padding: 20px 0 20px;
+
+        .messengers {
+            height: 50px;
+            width: 500px;
+            @include flex(row, space-between, center, wrap);
+            margin-top: -40px;
+
+            @media screen and (max-width: 623px) {
+                width: 100%;
+            }
+        }
+
+        .rights {
+            @include flex(column, center, flex-end, wrap);
+            margin-top: 40px;
+            @include text($textFontFamily, 12px, 400, 1.2);
+        }
+    }
+}
+
+
+
+
+
+

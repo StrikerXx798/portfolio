@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Footer.module.css';
-import BlockTitle from "../BlockTitle";
+import styles from './Footer.module.scss';
+import Title from "../../common/components/Title/Title";
 import Messenger from "./Messenger/Messenger";
 import vkIcon from '../../assets/vk.svg';
 import twIcon from '../../assets/twitter.svg';
@@ -26,7 +26,7 @@ class Footer extends React.Component {
         return (
             <div className={styles.footer}>
                 <div className={styles.container}>
-                    <BlockTitle title={this.state.title}/>
+                    <Title title={this.state.title}/>
                     <Fade bottom>
                         <div className={styles.messengers}>
                             {messenger}

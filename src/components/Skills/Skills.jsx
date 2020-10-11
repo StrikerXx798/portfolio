@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Skills.module.css';
+import styles from './Skills.module.scss';
 import Skill from './Skill/Skill';
-import BlockTitle from "../BlockTitle";
+import Title from "../../common/components/Title/Title";
 import reactIcon from '../../assets/react_icon.svg';
 import cssIcon from '../../assets/css_icon.svg';
 import jsIcon from '../../assets/js_icon.svg';
@@ -30,7 +30,7 @@ class Skills extends React.Component {
             <div className = {styles.skills}>
                 <Fade bottom>
                     <div className={styles.container}>
-                        <BlockTitle title={this.state.title}/>
+                        <Title title={this.state.title}/>
                         <div className={styles.skillSet}>
                             {skill}
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Main.module.css';
+import styles from './Main.module.scss';
 import mainPhoto from '../../assets/photo_main.jpg'
 
 class Main extends React.Component {
@@ -16,7 +16,9 @@ class Main extends React.Component {
                         <h1>Я front-end разработчик</h1>
                     </div>
                     <div className={styles.photo}>
-                        <div className={styles.image}><img id={styles.mainPhoto} src={this.state.photo} alt=""/></div>
+                        <div className={styles.image}>
+                            <img className={styles.mainPhoto} src={this.state.photo} alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>

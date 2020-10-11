@@ -1,0 +1,53 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.skill {
+    width: 300px;
+    @include flex(column, null, center, null);
+    margin-bottom: 100px;
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.12);
+        transform: rotate(45deg);
+        @include flex(column, center, center, nowrap);
+        margin-bottom: 40px;
+        & img {
+            width: 60%;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .skillTitle {
+        @include flex(null, center, null, null);
+        @include text($titleFontFamily, 16px, 700, 1.2);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        padding: 0;
+        color: $primaryColor;
+    }
+
+    .descriptionSkill {
+        text-align: center;
+        @include text($textFontFamily, 15px, 400, 1.2)
+    }
+
+    @media screen and (max-width: 1135px) {
+        width: 400px;
+    }
+
+    @media screen and (max-width: 630px) {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

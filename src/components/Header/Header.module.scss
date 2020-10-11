@@ -1,0 +1,16 @@
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #3b3a3a;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,22 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    .line {
+        height: 1px;
+        width: 55px;
+        background-color: $primaryColor;
+        margin: 10px 0;
+    }
+    .text {
+        @include text($textFontFamily, 30px, 100, 1.2);
+        letter-spacing: 5px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+

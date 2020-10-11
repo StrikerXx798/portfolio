@@ -1,0 +1,28 @@
+.messenger {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ecb624;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 80%;
+        transition: 0.2s;
+        &:hover {
+            width: 95%;
+        }
+    }
+    & a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+
+
+
+

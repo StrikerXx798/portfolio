@@ -1,0 +1,61 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.contacts {
+    min-height: 100vh;
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: space-around;
+    position : relative;
+    .container {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+    .formWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 540px;
+        height: 400px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -30px;
+        .formArea{
+            height: calc(1.5em + 0.75em + 2px) ;
+            padding: .4rem 15px;
+            width: 100%;
+        }
+        .formArea, .messageArea{
+            box-sizing: border-box;
+            background: $bgColor !important;
+            border: 1px solid #4a4a4a;
+            @include text($textFontFamily, 12px, 400, 1.2);
+            outline: none;
+            opacity: 0.5;
+            margin-bottom: 1rem;
+            &:focus{
+                border: 1px solid transparent;
+                transition: all 0.4s ease-in-out 0s;
+            }
+        }
+        .messageArea {
+            min-height: 160px;
+            padding: 15px;
+            width: 100%;
+        }
+        @media screen and (max-width: 623px) {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+

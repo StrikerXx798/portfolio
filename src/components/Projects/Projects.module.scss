@@ -1,0 +1,24 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.projects {
+  min-height: 100vh;
+  background-color: $bgColor;
+  @include flex(column, center, center, null);
+  position: relative;
+
+  .container {
+    @include container();
+    align-self: center;
+    padding: 50px 0;
+
+    .projectsSet {
+      @include flex(null, space-around, null, wrap);
+      width: 100%;
+
+      @media screen and (max-width: 1135px) {
+        @include flex(column, center, center, null);
+      }
+    }
+  }
+}

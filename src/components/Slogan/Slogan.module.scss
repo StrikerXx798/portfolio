@@ -1,0 +1,20 @@
+@import "src/common/styles/sass/variables";
+
+.slogan {
+    height: 100%;
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    position : relative;
+    .container {
+        min-width: 300px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+}
+

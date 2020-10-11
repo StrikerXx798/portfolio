@@ -1,0 +1,16 @@
+@import "src/common/styles/sass/variables";
+
+.navMenu {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    .link {
+        color: $primaryColor;
+        text-decoration-line: none;
+        transition: 0.4s;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+
