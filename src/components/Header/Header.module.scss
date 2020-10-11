@@ -4,10 +4,11 @@
 .header {
     height: 50px;
     width: 100%;
-    background-color: #3b3a3a;
+    background-color: $bgSecondColor;
     @include flex(row, center, center, wrap);
     position: fixed;
     z-index: 3;
+    opacity: 0.9;
     .container {
         @include container();
         @include flex(row, flex-end, center, wrap);

@@ -1,27 +1,24 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
-import Button from "../../common/components/Button/Button";
 import Title from "../../common/components/Title/Title";
 import Fade from 'react-reveal/Fade'
 
 class Contacts extends React.Component {
     state = {
         title: "Контакты",
-        buttonType: "submit",
-        buttonTitle: "Отправить"
     }
 
     render = () => {
         return (
-            <div className={styles.contacts}>
-                <Fade bottom>
+            <div id='contacts' className={styles.contacts}>
+                <Fade left>
                     <div className={styles.container}>
                         <Title title={this.state.title}/>
                         <form className={styles.formWrapper}>
-                            <input className={styles.formArea} placeholder="Имя" type=""/>
-                            <input className={styles.formArea} placeholder="E-Mail" type="email"/>
+                            <input className={styles.formArea} placeholder="Имя" type="text"/>
+                            <input className={styles.formArea} placeholder="E-Mail" type="text"/>
                             <textarea className={styles.messageArea} placeholder="Сообщение"/>
-                            <Button style={{position: 'static', transform: 'translate(0)'}} state={this.state} />
+                            <button className={styles.submitButton} type="submit">Отправить</button>
                         </form>
                     </div>
                 </Fade>

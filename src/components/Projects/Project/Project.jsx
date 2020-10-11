@@ -1,26 +1,28 @@
 import React from 'react';
 import styles from './Project.module.scss';
 import Button from "../../../common/components/Button/Button";
+import Fade from 'react-reveal/Fade'
 
 class Project extends React.Component {
     state ={
-        buttonType:"button",
         buttonTitle: "Смотреть",
     }
 
     render = () => {
     return (
         <div className = {styles.project}>
-            <div className={styles.imgBlock}>
-                <div className={styles.projectImg}>
-                    <img src={this.props.projectImg} alt=""/>
+            <Fade right>
+                <div className={styles.imgBlock}>
+                    <div className={styles.projectImg}>
+                        <img src={this.props.projectImg} alt=""/>
+                    </div>
+                    <Button style={{position: 'static', transform: 'translate(75%, -500%)'}} state={this.state} ghPages={this.props.ghPages}/>
                 </div>
-                <Button state={this.state} ghPages={this.props.ghPages}/>
-            </div>
-            <span className={styles.projectTitle}>{this.props.title}</span>
-            <div className={styles.description}>
-                {this.props.description}
-            </div>
+                <span className={styles.projectTitle}>{this.props.title}</span>
+                <div className={styles.description}>
+                    {this.props.description}
+                </div>
+            </Fade>
         </div>
     );
 }}

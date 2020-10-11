@@ -1,5 +1,6 @@
 @import "src/common/styles/sass/variables";
 @import "src/common/styles/sass/mixins";
+@import "src/common/components/Button/Button.module";
 
 .contacts {
     min-height: 100vh;
@@ -20,7 +21,8 @@
             padding: .4rem 15px;
             width: 100%;
         }
-        .formArea, .messageArea{
+        .formArea,
+        .messageArea{
             box-sizing: border-box;
             background: $bgColor !important;
             border: 1px solid #4a4a4a;
@@ -30,13 +32,20 @@
             margin-bottom: 1rem;
             &:focus{
                 border: 1px solid transparent;
-                transition: all 0.4s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
             }
         }
         .messageArea {
             min-height: 160px;
             padding: 15px;
             width: 100%;
+        }
+        .submitButton {
+            @extend .button;
+            align-self: center;
+            background-color: transparent;
+            margin-top: 30px;
+            cursor: pointer;
         }
         @media screen and (max-width: 623px) {
             width: 100%;

@@ -22,7 +22,7 @@ class Projects extends React.Component {
             return <Project title={p.title} projectImg={p.projectImg} description={p.description} ghPages={p.ghPages}/>
         })
         return (
-            <div className = {styles.projects}>
+            <div id='projects' className = {styles.projects}>
                 <Fade bottom>
                     <div className = {styles.container}>
                         <Title title={this.state.title}/>

@@ -4,15 +4,13 @@
 .navMenu {
     width: 400px;
     @include flex(row, space-between, center, wrap);
-
-    .link {
-        @include text($textFontFamily, 14px, 400, 1.2);
-        color: $primaryColor;
+    @include text($textFontFamily, 14px, 400, 1.2);
+    cursor: pointer;
+    &:hover{
         text-decoration-line: none;
-        transition: 0.4s;
-        &:hover{
-            opacity: 0.5;
-        }
+    }
+    .active {
+        color: $primaryColor;
     }
 }
 

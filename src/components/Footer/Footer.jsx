@@ -6,6 +6,7 @@ import vkIcon from '../../assets/vk.svg';
 import twIcon from '../../assets/twitter.svg';
 import tmIcon from '../../assets/telegram.svg';
 import fbIcon from '../../assets/fb.svg';
+import gitIcon from '../../assets/git_icon.svg';
 import Fade from 'react-reveal/Fade'
 
 class Footer extends React.Component {
@@ -16,6 +17,7 @@ class Footer extends React.Component {
             {href: 'https://twitter.com/str1k4', icon: twIcon},
             {href: 'https://t.me/StrikerXx7689', icon: tmIcon},
             {href: 'https://www.facebook.com/profile.php?id=100002334266350&ref=bookmarks', icon: fbIcon},
+            {href: 'https://github.com/StrikerXx798', icon: gitIcon},
         ]
     }
 

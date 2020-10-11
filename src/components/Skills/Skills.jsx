@@ -27,8 +27,8 @@ class Skills extends React.Component {
         })
 
         return (
-            <div className = {styles.skills}>
-                <Fade bottom>
+            <div id='skills' className = {styles.skills}>
+                <Fade left>
                     <div className={styles.container}>
                         <Title title={this.state.title}/>
                         <div className={styles.skillSet}>
