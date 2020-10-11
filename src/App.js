@@ -7,20 +7,31 @@ import Projects from './components/Projects/Projects';
 import Slogan from './components/Slogan/Slogan';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
+import Particles from 'react-particles-js'
+
+const particlesOpt = {
+    particles: {
+        number: {
+            value: 100,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        }
+    }
+}
 
 class App extends React.Component {
   render = () => {
     return (
         <div className = "App">
-          <div className = "Portfolio">
+            <Particles className={'particles'} params={particlesOpt} />
             <Header />
             <Main />
             <Skills />
             <Projects />
-            <Slogan />
             <Contacts />
             <Footer />
-          </div>
         </div>
     );
   };

@@ -13,13 +13,13 @@ class Project extends React.Component {
         <div className = {styles.project}>
             <div className={styles.imgBlock}>
                 <div className={styles.projectImg}>
-
+                    <img src={this.props.projectImg} alt=""/>
                 </div>
-                <Button state={this.state}/>
+                <Button state={this.state} ghPages={this.props.ghPages}/>
             </div>
             <span className={styles.projectTitle}>{this.props.title}</span>
             <div className={styles.description}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, omnis.
+                {this.props.description}
             </div>
         </div>
     );

@@ -1,12 +1,16 @@
 .button{
+    text-decoration: none;
     width: 150px;
     height: 50px;
     align-self: center;
     align-items: center;
-    background: white;
+    background: none;
     border: 0px;
     font-family: 'Noto Sans', sans-serif;
-    padding: 0;
+    font-weight: 400;
+    line-height: 1;
+    padding: 8px 30px;
+    max-width: 180px;
     outline: none;
     cursor: pointer;
     position: absolute;
@@ -19,4 +23,8 @@
 
 .button:hover{
     background-color: #ecb624;
+}
+
+.button:visited {
+    color: #000000;
 }

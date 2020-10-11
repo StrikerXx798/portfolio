@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Slogan.module.css';
 import Button from "../Button";
 import BlockTitle from "../BlockTitle";
+import Fade from 'react-reveal/Fade'
 
 class Slogan extends React.Component {
     state = {
@@ -13,10 +14,12 @@ class Slogan extends React.Component {
     render = () => {
         return (
             <div className={styles.slogan}>
-                <div className={styles.container}>
-                    <BlockTitle title={this.state.title}/>
-                    <Button style={{position: 'static', transform: 'translate(0)'}} state={this.state} />
-                </div>
+                <Fade bottom>
+                    <div className={styles.container}>
+                        <BlockTitle title={this.state.title}/>
+                        <Button style={{position: 'static', transform: 'translate(0)'}} state={this.state} />
+                    </div>
+                </Fade>
             </div>
         );
     }

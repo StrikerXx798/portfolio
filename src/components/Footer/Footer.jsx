@@ -6,7 +6,7 @@ import vkIcon from '../../assets/vk.svg';
 import twIcon from '../../assets/twitter.svg';
 import tmIcon from '../../assets/telegram.svg';
 import fbIcon from '../../assets/fb.svg';
-
+import Fade from 'react-reveal/Fade'
 
 class Footer extends React.Component {
     state ={
@@ -27,10 +27,12 @@ class Footer extends React.Component {
             <div className={styles.footer}>
                 <div className={styles.container}>
                     <BlockTitle title={this.state.title}/>
-                    <div className={styles.messengers}>
-                        {messenger}
-                    </div>
-                    <span className={styles.rights}>© 2020 All rights reserved</span>
+                    <Fade bottom>
+                        <div className={styles.messengers}>
+                            {messenger}
+                        </div>
+                        <span className={styles.rights}>© 2020 All rights reserved</span>
+                    </Fade>
                 </div>
             </div>
         );

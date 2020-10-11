@@ -3,6 +3,7 @@
     background-color: #1f1f20;
     display: flex;
     justify-content: space-around;
+    position : relative;
 }
 
 .container {
@@ -25,6 +26,7 @@
 }
 
 .formArea, .messageArea{
+    box-sizing: border-box;
     background: #252527 !important;
     border: 1px solid #4a4a4a;
     font-size: 12px;
@@ -34,6 +36,11 @@
     color: #495057;
     margin-bottom: 1rem;
     font-family: 'Noto Sans', sans-serif;
+}
+
+.formArea, .messageArea:focus{
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .messageArea {
