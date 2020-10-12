@@ -11,9 +11,9 @@ class Projects extends React.Component {
     state ={
         title: "Мои проекты",
         project: [
-            {title: 'To Do List', projectImg: counterIMG, description:'', ghPages:''},
-            {title: 'Counter', projectImg:todoIMG, description:'', ghPages:'https://StrikerXx798.github.io/counter/'},
-            {title: 'Social Network', projectImg:socialIMG, description:'', ghPages:''},
+            {title: 'To Do List', projectImg: counterIMG, description:'Приложение для создания своего списка дела, незаменимая вещь, особенно если часто забываешь что-то сделать.', ghPages:'https://StrikerXx798.github.io/to_do_list/'},
+            {title: 'Counter', projectImg:todoIMG, description:'Классический счетчик кликов, с возможностью настройки максимального и минимального числа.', ghPages:'https://StrikerXx798.github.io/counter/'},
+            {title: 'Social Network', projectImg:socialIMG, description:'Большая социальная социальная сеть с подгружаемым с сервера списком пользователей.', ghPages:'https://Strikerxx798.github.io/social-site/'},
         ]
     }
 
