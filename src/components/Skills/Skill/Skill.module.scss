@@ -2,9 +2,10 @@
 @import "src/common/styles/sass/mixins";
 
 .skill {
+    height: 230px;
     width: 300px;
     @include flex(column, null, center, null);
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 
     .icon {
         width: 80px;
@@ -31,7 +32,7 @@
 
     .descriptionSkill {
         text-align: center;
-        @include text($textFontFamily, 15px, 400, 1.2)
+        @include text($textFontFamily, 12px, 400, 1.2)
     }
 
     @media screen and (max-width: 1135px) {
